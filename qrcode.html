@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code</title>
+  <style>
+    /* Estilo geral */
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      color: #333;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+
+    /* Estilo do QR Code */
+    .qr-code {
+      padding: 15px;
+      background: #fff;
+      border: 5px solid #ff9a9e;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .qr-code img {
+      width: 250px;
+      height: 250px;
+    }
+
+    /* Layout responsivo */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .qr-code img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Escaneie o QR Code</h1>
+
+  <div class="qr-code">
+    <img 
+      src="https://api.qrserver.com/v1/create-qr-code/?data= https://joseleandro18.github.io/corpo_qrcode/index.html&size=1000x00" 
+      alt="QR Code">
+  </div>
+</body>
+</html>
